@@ -1,5 +1,10 @@
 
 .br-header{
     text-align:center;
+    margin-top:0px;
 }
 
+.br-p{
+    text-align: justify;
+    margin-top:10px;
+}
