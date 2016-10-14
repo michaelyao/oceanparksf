@@ -1,0 +1,29 @@
+{
+  "name": "oceanparksf",
+  "version": "0.1.0",
+  "description": "Ocean Park SF",
+  "engines": {
+    "node": "5.9.1"
+  },
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "ejs": "2.4.1",
+    "express": "4.13.3",
+    "lodash": "^4.14.2",
+    "request": "^2.72.0",
+    "xmljson": "~0.2.0",
+    "nedb": "*",
+    "morgan": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/michaelyao/oceanparksf.git"
+  },
+  "keywords": [
+    "node",
+     "express"
+  ]
+}
