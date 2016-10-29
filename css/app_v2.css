@@ -1,0 +1,34 @@
+
+@media only screen and (max-width: 767px) {
+  .revtp-searchform textarea,
+  .revtp-form textarea { width: 200px !important; },
+  .br-dev-text div {text-align:center;}
+}
+
+@media only screen and (max-width: 480px) {
+    .revtp-form textarea { width: 200px !important; },
+    .br-dev-text div {text-align:center;}
+}
+
+.br-dev-text div {text-align:left;}
+
+.revtp-form textarea{  
+  font-family: "Arial", sans-serif;
+    font-size: 15px;
+    color: #000;
+    background-color: #fff;
+    line-height: 36px;
+    padding: 0 20px;
+    cursor: text;
+    border: 0;
+    width: 400px;
+    margin-bottom: 0px;
+    -webkit-transition: background-color 0.5s;
+    -moz-transition: background-color 0.5s;
+    -o-transition: background-color 0.5s;
+    -ms-transition: background-color 0.5s;
+    transition: background-color 0.5s;
+    
+    
+    border-radius: 0px;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>WebsiteBuilder-Menu1 - Slider Revolution</title>
+    <meta name="description" content="Slider Revolution Example" />
+    <meta name="keywords" content="fullscreen image, grid layout, flexbox grid, transition" />
+    <meta name="author" content="ThemePunch" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	</head>
+	
+	<body>    
+<div>
+<ur>
+<li>
+	<%= md.mobile() %>
+	</li>
+	<li>
+	<%= md.phone() %></li>
+	<li>
+	<%= md.tablet() %></li>
+<li>
+	<%= md.userAgent() %></li>
+<li>	<%= md.os() %>
+</li>
+<li>os: <%=md.os()%>
+</li>
+<li>version = 
+<%= md.version('Webkit')%>
+</li>
+<% var deviceType = (md.mobile() ? (md.tablet() ? 'tablet' : 'phone') : 'computer'); %>
+<%=deviceType%>
+</ur>
+</div>
+	</body>
+	</html>
