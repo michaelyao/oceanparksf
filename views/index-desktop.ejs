@@ -1455,6 +1455,8 @@
             'token'             : '<%=token%>'
         };
 
+
+
         // process the form
         $.ajax({
             type        : 'POST', // define the type of HTTP verb we want to use (POST for our form)
@@ -1470,6 +1472,14 @@
                 $('input[id=mce-EMAIL]').val("");
                 // here we will handle errors and validation messages
             });
+
+        //Google Analytics Tracking Code
+        ga('send', {
+          hitType: 'event',
+          eventCategory: 'Contact',
+          eventAction: 'Submit',
+          eventLabel: 'Hero Email'
+        });
 
         // stop the form from submitting the normal way and refreshing the page
         event.preventDefault();
@@ -1512,6 +1522,14 @@
                 $('textarea[name=brmsg]').val("");
                 $('input[name=brphone]').val("");
             });
+
+        //Google Analytics Tracking Code
+        ga('send', {
+          hitType: 'event',
+          eventCategory: 'Contact',
+          eventAction: 'Submit',
+          eventLabel: 'Contact Info'
+        });
 
         // stop the form from submitting the normal way and refreshing the page
         event.preventDefault();
