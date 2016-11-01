@@ -1431,6 +1431,14 @@
                 // here we will handle errors and validation messages
             });
 
+        //Google Analytics Tracking Code
+        ga('send', {
+          hitType: 'event',
+          eventCategory: 'Contact',
+          eventAction: 'Submit',
+          eventLabel: 'Hero Email - Mobile'
+        })            
+
         // stop the form from submitting the normal way and refreshing the page
         event.preventDefault();
     });
@@ -1472,6 +1480,15 @@
                 $('textarea[name=brmsg]').val("");
                 $('input[name=brphone]').val("");
             });
+
+
+        //Google Analytics Tracking Code
+        ga('send', {
+          hitType: 'event',
+          eventCategory: 'Contact',
+          eventAction: 'Submit',
+          eventLabel: 'Contact Info - Mobile'
+        });
 
         // stop the form from submitting the normal way and refreshing the page
         event.preventDefault();
